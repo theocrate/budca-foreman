@@ -14,6 +14,6 @@
     provision_method: build
     foreman_host: satellite.skycloud.grp
     foreman_user: admin
-    foreman_pass: {{survey_foreman_pass}}
+    foreman_pass: "{{survey_foreman_pass}}"
     
   
