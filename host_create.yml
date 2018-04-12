@@ -8,7 +8,6 @@
   foreman_host:
     name: test
     state: running
-    domain: example.com
     environment: production
     mac: C2:1F:D9:95:E8:C8
     provision_method: build
