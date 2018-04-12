@@ -1,1 +1,19 @@
 ---
+- name: Host Build With Satellite
+  hosts: all
+  
+  tasks:
+
+- name: Create Host
+  foreman_host:
+    name: test
+    state: running
+    domain: example.com
+    environment: production
+    mac: C2:1F:D9:95:E8:C8
+    provision_method: build
+    foreman_host: satellite.skycloud.grp
+    foreman_user: admin
+    foreman_pass: {{survey_foreman_pass}}
+    
+  
